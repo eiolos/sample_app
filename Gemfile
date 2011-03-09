@@ -9,9 +9,7 @@ gem 'rails', '3.0.5'
 group :production, :staging do   
 	gem "pg" 
 end 
-group :development, :test do 
-	
-end
+
 
 group :development do
 	gem 'rspec-rails', '2.5.0'

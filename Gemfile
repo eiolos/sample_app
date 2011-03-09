@@ -10,16 +10,18 @@ group :production, :staging do
 	gem "pg" 
 end 
 group :development, :test do 
-	gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
+	
 end
 
 group :development do
 	gem 'rspec-rails', '2.5.0'
+	gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 end
 
 group :test do
 	gem 'rspec', '2.5.0'
 	gem 'webrat', '0.7.1'
+	gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 end
 
 # Use unicorn as the web server
